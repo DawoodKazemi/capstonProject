@@ -36,7 +36,10 @@ public class Base {
 		PropertyConfigurator.configure(log4jPath);	
 	}
 
-	
+	public static String getUrl() {
+		
+		String url = properties.getProperty("url");
+		return url;
 
-
+}
 }
